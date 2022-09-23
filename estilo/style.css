@@ -1,0 +1,458 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+	font-family: 'arial';
+}
+
+@font-face {
+	font-family: ubuntu;
+	src: url(../fonts/ubuntubold.ttf);
+}
+
+/* PAGINA PRINCIPAL*/
+
+.site{
+	display:grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 7% 13% 40% 40%;
+	grid-template-areas:"topo menu menu menu menu "
+						"princ princ princ princ princ"
+						"princ princ princ princ princ"
+						"princ princ princ princ princ "
+						"rodape rodape rodape rodape rodape";
+}
+
+#topo{
+	grid-area: topo;
+	background-color:#222121;
+	height:80px;
+	box-shadow: 1px 2px 30px 1px #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#topo img{
+	height: 120px;
+	width: 260px;
+}
+
+
+#teste{
+	background-color:#ffffff;
+	width: 100%;
+	height:250px;
+	grid-area: cima;
+	display: flex;
+	justify-content: center;
+}
+
+#sub1{
+	grid-area: sub1;
+	
+}
+
+#sub2{
+	grid-area: sub2;
+}
+
+#sub3{
+	grid-area: sub3;
+}
+
+#teste2{
+	background-color:#ffffff;
+	width: 100%;
+	height:350px;
+	grid-area: meio;
+	display: flex;
+	justify-content: center;
+}
+
+#teste3{
+	background-color:#ffffff;
+	width: 100%;
+	height:350px;
+	grid-area: baixo;
+	display: flex;
+	justify-content: center;
+}
+
+#princ{
+	grid-area: princ;
+	display:grid;
+	height:1500px;
+	width:100%;
+	/*margin: 20px 0px 0px 0px;*/
+	grid-template-columns:100%;
+	grid-template-rows: 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr;
+	grid-template-areas:"sub1"
+						"cima"
+						"sub2"
+						"meio"
+						"sub3"
+						"baixo";
+}
+
+.subtitulos{
+	font-family: 'ubuntu', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #000000;
+	height: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}	
+
+#menu{
+    background-color:#ffffff;
+    height:80px;
+    width:100%;
+    box-shadow: 1px 2px 30px 1px #000000;
+	grid-area: menu;
+}
+
+.linkmenu{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 22px;
+    font-family: 'ubuntu', sans-serif;
+	
+}
+
+.linkmenu strong{
+	color: #FFA500;
+}
+
+.linkmenu:hover{
+	text-decoration: underline;
+	transition:0.4s;
+}
+
+
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-color: #222121;
+}
+
+
+
+.bp{
+	width: 90%;
+	height: 400px;
+	border-radius: 40px;
+	background-color: #222121;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: space-between;
+}
+
+#secao1{
+	height: 250px;
+
+}
+.blocosbrancos{
+	width: 25%;
+	height: 80px;
+	background-color:#222121;
+	display: flex;
+	justify-content: center;
+	margin-top: 13px;
+	
+}
+
+.conteudo .blocosbrancos{
+	height: 40px;
+}
+
+.blocosbrancos h2{
+	text-align: center;
+	font-family: 'ubuntu', sans-serif;
+}
+
+.molde{
+	width: 40%;
+	height: 150px;
+}
+
+.molde2{
+	width: 55%;
+	height: 200px;
+}
+
+.conteudo{
+	background-color:#222121;
+	width: 98%;
+	height:60px ;
+	display: flex;
+	justify-content:space-around;
+	margin-top: 65px;
+}
+
+.conteudo h2{
+	text-align: center;
+	font-family: 'ubuntu', sans-serif;
+	color: #FFA500;
+
+}
+
+#ultsecao{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.localizador{
+	background-color:#ffffff;
+	height: 380px;
+	width: 25%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: solid 3px #FFA500;
+}
+
+.localizador:hover{
+	box-shadow: 1px 2px 30px 1px #000000;
+	transition: 0.4s;
+}
+
+.localizador h3{
+	font-family: 'ubuntu', sans-serif;
+	color: #000000;
+	margin-top: 10px;
+	margin-left: 5px;
+	font-size: 27px;
+
+}
+
+.botaocomprar{
+	width:200px;
+	height: 50px;
+	background-color: #FFA500;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.botaocomprar a{
+	text-align: center;
+	font-family: 'ubuntu', sans-serif;
+	text-decoration: none;
+	color: #000000;
+	font-size: 35px;
+}
+
+.botaocomprar a:hover{
+	text-decoration: underline;
+	transition: 0.4s;
+}
+
+.botaocomprar:hover{
+	box-shadow: 1px 2px 10px 1px #000000;
+	transition: 0.4s;
+}
+
+.centralizador{
+	width: 100%;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15px;
+}
+
+#rodape{
+    background-color: #222121;
+    height: 200px;
+    width: 100%;
+	grid-area: rodape;
+	display:flex;
+	justify-content:flex-start;
+	align-items: center;
+}
+
+#rodape p{
+	color: #ffffff;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+/*CADASTRO E LOGIN */
+
+.site2{
+	display:grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 7% 13% 40% 40%;
+	grid-template-areas:"topo menu menu menu menu "
+						"princ2 princ2 princ2 princ2 princ2"
+						"princ2 princ2 princ2 princ2 princ2"
+						"princ2 princ2 princ2 princ2 princ2 "
+						"rodape rodape rodape rodape rodape";
+}
+
+#bodyc{
+	background-image: url(../imagens/imagfundo2.jpg);
+}
+
+#princ2{
+	grid-area: princ2;
+	height: 700px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cadastroarea{
+	width: 480px;
+	height:600px;
+	margin-top: 150px;
+	background-color: #222121;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 20% 80%;
+	grid-template-areas: "texto"
+						 "form";
+	box-shadow: 1px 2px 30px 1px #000000;
+	
+}
+
+.cadastroarea h2{
+	grid-area: texto;
+	color: #FFA500;
+	font-family: 'ubuntu', sans-serif;
+	font-size: 34px;
+	text-align: center;
+	margin-top: 25px;
+}
+
+form{
+	grid-area: form;
+	margin-left: 10px;
+}
+
+input{
+	margin-bottom: 10px;
+}
+
+label{
+	font-weight: 700;
+	color: #ffffff;
+}
+
+legend{
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+#botaoconf{
+	background-color: #FFA500;
+	color: #000000;
+	width: 90px;
+	height: 20px;
+}
+
+/* Pagina sobre a Historia da Empresa */
+
+.site3{
+	display:grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 7% 13% 40% 40%;
+	grid-template-areas:"topo menu menu menu menu "
+						"princ3 princ3 princ3 princ3 princ3"
+						"princ3 princ3 princ3 princ3 princ3"
+						"princ3 princ3 princ3 princ3 princ3 "
+						"rodape rodape rodape rodape rodape";
+}
+
+#bodyh{
+	background-image: url(../imagens/imagfundo1.jpg);
+}
+
+#princ3{
+	grid-area: princ3;
+	height: 1200px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#nossahist{
+	width: 70%;
+	height: 1000px;
+	background-color: #222121;
+	box-shadow: 1px 2px 30px 1px #000000;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 10% 30% 30% 30%;
+	grid-template-areas: "";
+}
+
+#titulo{
+	width: 100%;
+	height: 100px;
+	background-color:#222121;
+}
+
+#titulo h2{
+	font-family: 'ubuntu', sans-serif;
+	font-size: 30px;
+	color: #FFA500;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#texto1{
+	width: 100%;
+	height: 300px;
+	background-color:#222121;
+}
+
+#imagem{
+	width: 100%;
+	height: 300px;
+	background-color:#222121;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#imagem img{
+	width: 70%;
+	height: 380px;
+	margin-bottom: 80px;
+}
+
+#texto2{
+	width: 100%;
+	height: 300px;
+	background-color:#222121;
+}
+
+#texto1 p{
+	text-align: justify;
+	color: #ffffff;
+	margin-left: 60px;
+	margin-right: 60px;
+	font-size: 20px;
+}
+
+#texto2 p{
+	text-align: justify;
+	color: #ffffff;
+	margin-left: 60px;
+	margin-right: 60px;
+	font-size: 20px;
+}
+
